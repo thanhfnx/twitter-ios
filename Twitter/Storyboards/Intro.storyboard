@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_twitter" translatesAutoresizingMaskIntoConstraints="NO" id="9QH-Oe-afg">
-                                <rect key="frame" x="32" y="52" width="48" height="48"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_twitter" translatesAutoresizingMaskIntoConstraints="NO" id="9QH-Oe-afg">
+                                <rect key="frame" x="32" y="52" width="36" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="37a-rt-d2c"/>
-                                    <constraint firstAttribute="width" constant="48" id="xc0-1c-KQY"/>
+                                    <constraint firstAttribute="height" constant="36" id="37a-rt-d2c"/>
+                                    <constraint firstAttribute="width" constant="36" id="xc0-1c-KQY"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLN-Tp-iMB">
@@ -36,7 +36,7 @@ world right now.</string>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0s-ZI-2gr">
                                 <rect key="frame" x="32" y="391" width="311" height="40"/>
-                                <color key="backgroundColor" red="0.33333333333333331" green="0.67843137254901964" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="JzJ-gy-f5b"/>
                                 </constraints>
@@ -49,18 +49,22 @@ world right now.</string>
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="31f-SN-Mex" kind="presentation" id="JTx-7Y-pSn"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an account already?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsk-sX-3Sk">
-                                <rect key="frame" x="32" y="607" width="180.5" height="18"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <rect key="frame" x="32" y="608" width="166" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7X-YA-zpK">
-                                <rect key="frame" x="220.5" y="601" width="43" height="30"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <rect key="frame" x="206" y="601.5" width="40" height="29"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="tintColor" red="0.0" green="0.67450980390000004" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Log in">
-                                    <color key="titleColor" red="0.33333333329999998" green="0.67843137249999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.0" green="0.67450980392156867" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="RQE-ci-U73" kind="presentation" id="NwW-qo-jH4"/>
@@ -88,16 +92,24 @@ world right now.</string>
             </objects>
             <point key="canvasLocation" x="133.59999999999999" y="40.929535232383813"/>
         </scene>
+        <!--Register-->
+        <scene sceneID="d87-xK-PxM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Register" id="31f-SN-Mex" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8yW-u2-Cak" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="734" y="-139"/>
+        </scene>
         <!--Login-->
         <scene sceneID="C2K-Ek-M1C">
             <objects>
                 <viewControllerPlaceholder storyboardName="Login" id="RQE-ci-U73" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MNC-CG-qRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735" y="264"/>
+            <point key="canvasLocation" x="719" y="264"/>
         </scene>
     </scenes>
     <resources>
-        <image name="icon_twitter" width="512" height="512"/>
+        <image name="icon_twitter" width="36" height="36"/>
     </resources>
 </document>

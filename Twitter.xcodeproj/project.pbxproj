@@ -17,6 +17,9 @@
 		4B0874B71F8B1AD500244E5F /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0874B61F8B1AD500244E5F /* BaseViewController.swift */; };
 		4B0874BA1F8B1FDA00244E5F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0874B91F8B1FDA00244E5F /* LoginViewController.swift */; };
 		4B0874BC1F8B22ED00244E5F /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B0874BB1F8B22ED00244E5F /* UIColor+Extensions.swift */; };
+		4BC163E01F8B5084006113F1 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4BC163DF1F8B5084006113F1 /* Register.storyboard */; };
+		4BC163E31F8B622A006113F1 /* RegisterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BC163E21F8B622A006113F1 /* RegisterView.xib */; };
+		4BC163E51F8B656C006113F1 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BC163E41F8B656C006113F1 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		4B0874B61F8B1AD500244E5F /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		4B0874B91F8B1FDA00244E5F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		4B0874BB1F8B22ED00244E5F /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		4BC163DF1F8B5084006113F1 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		4BC163E21F8B622A006113F1 /* RegisterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterView.xib; sourceTree = "<group>"; };
+		4BC163E41F8B656C006113F1 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +70,7 @@
 		4B0874911F8B07B000244E5F /* Twitter */ = {
 			isa = PBXGroup;
 			children = (
+				4BC163E11F8B6219006113F1 /* CustomViews */,
 				4B0874B81F8B1FC100244E5F /* ViewControllers */,
 				4B0874B11F8B199800244E5F /* BaseController */,
 				4B0874A91F8B0C7500244E5F /* Extensions */,
@@ -81,6 +88,7 @@
 			children = (
 				4B0874A71F8B090300244E5F /* Intro.storyboard */,
 				4B0874AC1F8B0EA900244E5F /* Login.storyboard */,
+				4BC163DF1F8B5084006113F1 /* Register.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -107,8 +115,17 @@
 			isa = PBXGroup;
 			children = (
 				4B0874B91F8B1FDA00244E5F /* LoginViewController.swift */,
+				4BC163E41F8B656C006113F1 /* RegisterViewController.swift */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4BC163E11F8B6219006113F1 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				4BC163E21F8B622A006113F1 /* RegisterView.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,9 +188,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4B0874AD1F8B0EA900244E5F /* Login.storyboard in Resources */,
+				4BC163E31F8B622A006113F1 /* RegisterView.xib in Resources */,
 				4B08749D1F8B07B000244E5F /* LaunchScreen.storyboard in Resources */,
 				4B08749A1F8B07B000244E5F /* Assets.xcassets in Resources */,
 				4B0874A81F8B090300244E5F /* Intro.storyboard in Resources */,
+				4BC163E01F8B5084006113F1 /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +205,7 @@
 			files = (
 				4B0874AB1F8B0CEB00244E5F /* UIView+Extensions.swift in Sources */,
 				4B0874BC1F8B22ED00244E5F /* UIColor+Extensions.swift in Sources */,
+				4BC163E51F8B656C006113F1 /* RegisterViewController.swift in Sources */,
 				4B0874B71F8B1AD500244E5F /* BaseViewController.swift in Sources */,
 				4B0874931F8B07B000244E5F /* AppDelegate.swift in Sources */,
 				4B0874BA1F8B1FDA00244E5F /* LoginViewController.swift in Sources */,
