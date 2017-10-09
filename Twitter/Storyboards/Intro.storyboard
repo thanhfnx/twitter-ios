@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tKk-fL-Ed1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="grm-Cg-QZ4">
+            <objects>
+                <viewController id="tKk-fL-Ed1" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g9K-7O-c2E">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_twitter" translatesAutoresizingMaskIntoConstraints="NO" id="9QH-Oe-afg">
+                                <rect key="frame" x="32" y="52" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="48" id="37a-rt-d2c"/>
+                                    <constraint firstAttribute="width" constant="48" id="xc0-1c-KQY"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pLN-Tp-iMB">
+                                <rect key="frame" x="32" y="260" width="248.5" height="115"/>
+                                <string key="text">See what's
+happening in the
+world right now.</string>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P0s-ZI-2gr">
+                                <rect key="frame" x="32" y="391" width="311" height="40"/>
+                                <color key="backgroundColor" red="0.33333333333333331" green="0.67843137254901964" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="JzJ-gy-f5b"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                <state key="normal" title="Get started">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Have an account already?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vsk-sX-3Sk">
+                                <rect key="frame" x="32" y="607" width="180.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q7X-YA-zpK">
+                                <rect key="frame" x="220.5" y="601" width="43" height="30"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Log in">
+                                    <color key="titleColor" red="0.33333333329999998" green="0.67843137249999996" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="RQE-ci-U73" kind="presentation" id="NwW-qo-jH4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pLN-Tp-iMB" firstAttribute="centerY" secondItem="g9K-7O-c2E" secondAttribute="centerY" constant="-16" id="0bv-nJ-CtG"/>
+                            <constraint firstItem="9QH-Oe-afg" firstAttribute="leading" secondItem="MBz-2c-iRd" secondAttribute="leading" constant="32" id="45x-4Y-5AQ"/>
+                            <constraint firstItem="Q7X-YA-zpK" firstAttribute="leading" secondItem="Vsk-sX-3Sk" secondAttribute="trailing" constant="8" id="Gae-lR-blK"/>
+                            <constraint firstItem="9QH-Oe-afg" firstAttribute="top" secondItem="MBz-2c-iRd" secondAttribute="top" constant="32" id="RCc-zQ-bbo"/>
+                            <constraint firstItem="Q7X-YA-zpK" firstAttribute="baseline" secondItem="Vsk-sX-3Sk" secondAttribute="baseline" id="Vp7-LF-atY"/>
+                            <constraint firstItem="MBz-2c-iRd" firstAttribute="trailing" secondItem="P0s-ZI-2gr" secondAttribute="trailing" constant="32" id="biI-6z-68Q"/>
+                            <constraint firstItem="Vsk-sX-3Sk" firstAttribute="leading" secondItem="MBz-2c-iRd" secondAttribute="leading" constant="32" id="cxo-aI-Xqv"/>
+                            <constraint firstItem="pLN-Tp-iMB" firstAttribute="leading" secondItem="MBz-2c-iRd" secondAttribute="leading" constant="32" id="dXS-O3-RrB"/>
+                            <constraint firstItem="P0s-ZI-2gr" firstAttribute="leading" secondItem="MBz-2c-iRd" secondAttribute="leading" constant="32" id="hFg-sc-o4e"/>
+                            <constraint firstItem="MBz-2c-iRd" firstAttribute="bottom" secondItem="Vsk-sX-3Sk" secondAttribute="bottom" constant="42" id="ox8-hy-Ecv"/>
+                            <constraint firstItem="P0s-ZI-2gr" firstAttribute="top" secondItem="pLN-Tp-iMB" secondAttribute="bottom" constant="16" id="pty-MB-1ZB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="MBz-2c-iRd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4zW-aS-op3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="40.929535232383813"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="C2K-Ek-M1C">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Login" id="RQE-ci-U73" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MNC-CG-qRh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="735" y="264"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_twitter" width="512" height="512"/>
+    </resources>
+</document>
