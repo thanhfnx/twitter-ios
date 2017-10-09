@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Pve-3s-cDN">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Register View Controller-->
+        <scene sceneID="1A2-Sb-9dT">
+            <objects>
+                <viewController id="PAR-Au-78T" customClass="RegisterViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vvD-qW-xDQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSv-6l-5gv">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="co9-Yk-KcC">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="0.5"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="0.5" id="AnN-OT-U4K"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TxA-Jb-XfG">
+                                        <rect key="frame" x="295" y="6" width="64" height="32"/>
+                                        <color key="backgroundColor" red="0.0" green="0.67450980390000004" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="Qjq-Qq-kXv"/>
+                                            <constraint firstAttribute="height" constant="32" id="eH9-EL-Pf2"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                        <state key="normal" title="Next">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="PAR-Au-78T" eventType="touchUpInside" id="snr-TU-ABI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="2rz-nb-QQP"/>
+                                    <constraint firstItem="TxA-Jb-XfG" firstAttribute="centerY" secondItem="LSv-6l-5gv" secondAttribute="centerY" id="Ddz-5a-Lre"/>
+                                    <constraint firstAttribute="trailing" secondItem="TxA-Jb-XfG" secondAttribute="trailing" constant="16" id="Jxz-xB-7zN"/>
+                                    <constraint firstItem="co9-Yk-KcC" firstAttribute="top" secondItem="LSv-6l-5gv" secondAttribute="top" id="KH6-g9-Xrs"/>
+                                    <constraint firstAttribute="trailing" secondItem="co9-Yk-KcC" secondAttribute="trailing" id="OHC-o8-xhf"/>
+                                    <constraint firstItem="co9-Yk-KcC" firstAttribute="leading" secondItem="LSv-6l-5gv" secondAttribute="leading" id="QA5-3t-CGV"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIP-cP-v1f">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OIP-cP-v1f" firstAttribute="leading" secondItem="jz2-iv-HP8" secondAttribute="leading" id="46y-kd-6Km"/>
+                            <constraint firstItem="OIP-cP-v1f" firstAttribute="top" secondItem="jz2-iv-HP8" secondAttribute="top" id="MtP-re-ie1"/>
+                            <constraint firstItem="LSv-6l-5gv" firstAttribute="leading" secondItem="vvD-qW-xDQ" secondAttribute="leading" id="RI3-jr-5Jm"/>
+                            <constraint firstItem="jz2-iv-HP8" firstAttribute="bottom" secondItem="LSv-6l-5gv" secondAttribute="bottom" id="i9N-Hu-dXO"/>
+                            <constraint firstItem="jz2-iv-HP8" firstAttribute="trailing" secondItem="LSv-6l-5gv" secondAttribute="trailing" id="sUd-Rm-sCs"/>
+                            <constraint firstItem="jz2-iv-HP8" firstAttribute="trailing" secondItem="OIP-cP-v1f" secondAttribute="trailing" id="wFg-zN-hJi"/>
+                            <constraint firstItem="LSv-6l-5gv" firstAttribute="top" secondItem="OIP-cP-v1f" secondAttribute="bottom" id="z1P-Gb-Eyr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jz2-iv-HP8"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ibI-6E-JW4"/>
+                    <connections>
+                        <outlet property="scrollView" destination="OIP-cP-v1f" id="yNQ-8f-OTI"/>
+                        <outlet property="toolbarViewBottomConstraint" destination="i9N-Hu-dXO" id="AwB-z2-GBb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Bd-Kr-p2T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="719" y="868"/>
+        </scene>
+        <!--Base Navigation Controller-->
+        <scene sceneID="Pa8-8d-pym">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Pve-3s-cDN" customClass="BaseNavigationController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="zya-fM-zWJ">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PAR-Au-78T" kind="relationship" relationship="rootViewController" id="jBx-wW-gAJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="D5L-Lk-sQu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98" y="868"/>
+        </scene>
+    </scenes>
+</document>
