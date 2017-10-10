@@ -13,11 +13,14 @@
         <!--Register View Controller-->
         <scene sceneID="1A2-Sb-9dT">
             <objects>
-                <viewController id="PAR-Au-78T" customClass="RegisterViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="PAR-Au-78T" customClass="RegisterViewController" customModule="Twitter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vvD-qW-xDQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIP-cP-v1f">
+                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                            </scrollView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LSv-6l-5gv">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <subviews>
@@ -59,9 +62,6 @@
                                     <constraint firstItem="co9-Yk-KcC" firstAttribute="leading" secondItem="LSv-6l-5gv" secondAttribute="leading" id="QA5-3t-CGV"/>
                                 </constraints>
                             </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OIP-cP-v1f">
-                                <rect key="frame" x="0.0" y="64" width="375" height="559"/>
-                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -69,9 +69,9 @@
                             <constraint firstItem="OIP-cP-v1f" firstAttribute="top" secondItem="jz2-iv-HP8" secondAttribute="top" id="MtP-re-ie1"/>
                             <constraint firstItem="LSv-6l-5gv" firstAttribute="leading" secondItem="vvD-qW-xDQ" secondAttribute="leading" id="RI3-jr-5Jm"/>
                             <constraint firstItem="jz2-iv-HP8" firstAttribute="bottom" secondItem="LSv-6l-5gv" secondAttribute="bottom" id="i9N-Hu-dXO"/>
+                            <constraint firstItem="jz2-iv-HP8" firstAttribute="bottom" secondItem="OIP-cP-v1f" secondAttribute="bottom" constant="44" id="ngA-PJ-fVA"/>
                             <constraint firstItem="jz2-iv-HP8" firstAttribute="trailing" secondItem="LSv-6l-5gv" secondAttribute="trailing" id="sUd-Rm-sCs"/>
                             <constraint firstItem="jz2-iv-HP8" firstAttribute="trailing" secondItem="OIP-cP-v1f" secondAttribute="trailing" id="wFg-zN-hJi"/>
-                            <constraint firstItem="LSv-6l-5gv" firstAttribute="top" secondItem="OIP-cP-v1f" secondAttribute="bottom" id="z1P-Gb-Eyr"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jz2-iv-HP8"/>
                     </view>

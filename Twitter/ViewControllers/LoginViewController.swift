@@ -9,17 +9,17 @@
 import UIKit
 
 class LoginViewController: BaseViewController {
-
-	// MARK: - View lifecycle
-
+    
+    // MARK: - View lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
-	// MARK: - IBAction
-
+    
+    // MARK: - IBAction
+    
     @IBAction private func cancelButtonTapped(_ sender: Any) {
-		dismiss(animated: true, completion: nil)
+        dismiss(animated: true, completion: nil)
     }
-
+    
 }
