@@ -21,7 +21,6 @@ extension UIColor {
     convenience init(hexString: String, alpha: CGFloat = 1.0) {
         let hexString = hexString.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
         let scanner = Scanner(string: hexString)
-
         if hexString.hasPrefix("#") {
             scanner.scanLocation = 1
         }
@@ -31,7 +30,6 @@ extension UIColor {
         let r = Int(color >> 16) & mask
         let g = Int(color >> 8) & mask
         let b = Int(color) & mask
-
         self.init(red: CGFloat(r) / 255.0, green: CGFloat(g) / 255.0, blue: CGFloat(b) / 255.0, alpha: alpha)
     }
 
