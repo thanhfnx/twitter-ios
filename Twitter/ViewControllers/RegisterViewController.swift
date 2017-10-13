@@ -28,6 +28,7 @@ class RegisterViewController: BaseViewController {
     }
 
     @IBOutlet private weak var scrollView: UIScrollView!
+    @IBOutlet private weak var fullNameTextField: UITextField!
     @IBOutlet private weak var phoneNumberView: UIView!
     @IBOutlet private weak var emailView: UIView!
     @IBOutlet private weak var descriptionLabel: ActiveLabel!

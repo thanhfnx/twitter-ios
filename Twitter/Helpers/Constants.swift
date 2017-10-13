@@ -9,3 +9,5 @@
 import UIKit
 
 let kDefaultColor = UIColor(hexString: "00aced")
+let kDefaultTintColor = UIColor(hexString: "647785")
+let kDefaultFontSize: CGFloat = 14.0
